@@ -8,7 +8,7 @@ module.exports = {
 	mode: 'development',
 	entry: './src/index.js',
 	plugins: [
-	    new CleanWebpackPlugin(['dist']),
+	    new CleanWebpackPlugin(['docs']),
 		new HtmlWebpackPlugin({
 			title: 'PIXI',
 		}),
@@ -17,7 +17,7 @@ module.exports = {
 	],
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'docs')
 	},
 	module: {
 		rules: [
