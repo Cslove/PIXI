@@ -1,6 +1,6 @@
 import * as PIXI from 'pixi.js';
 import './index.css';
-import all from './img/practice.json'
+
 
 let Application = PIXI.Application,
 	Sprite = PIXI.Sprite,
@@ -15,7 +15,6 @@ let app = new Application();
 
 Loader.add('./img/practice.json').load(setup);
 
-console.log(PIXI.loader.resources)
 function setup(){
 	let id = PIXI.loader.resources["./img/practice.json"].textures;
 	
